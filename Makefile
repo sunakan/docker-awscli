@@ -21,3 +21,7 @@ login:
 
 push:
 	docker push docker.pkg.github.com/${OWNER}/${REPOSITORY}/${IMAGE_NAME}:${AWS_CLI_VERSION}
+
+ash:
+	docker run --rm -it --entrypoint="" \
+    docker.pkg.github.com/${OWNER}/${REPOSITORY}/${IMAGE_NAME}:${AWS_CLI_VERSION} ash
